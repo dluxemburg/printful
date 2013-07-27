@@ -1,6 +1,6 @@
 # Printful
 
-TODO: Write a gem description
+Unofficial Ruby wrapper for [Printful](https://www.theprintful.com/)'s [API](https://www.theprintful.com/api).
 
 ## Installation
 
