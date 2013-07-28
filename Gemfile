@@ -6,4 +6,5 @@ gemspec
 group :development do
   gem 'guard-rspec'
   gem 'rb-fsevent'
+  gem 'pry'
 end

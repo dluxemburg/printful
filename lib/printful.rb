@@ -1,21 +1,20 @@
 require "printful/version"
+require "printful/error"
 require "printful/client"
 require "printful/model"
 require "printful/customer"
 require "printful/order"
 require "printful/product"
+require "printful/recipient"
+require "printful/item"
 
 module Printful
-
-  def self.default_client
-    @default_client ||= Client.new(api_key: api_key)
-  end
 
   def self.api_key=(key)
     @api_key = key
   end
 
-  def api_key
+  def self.api_key
     @api_key || ENV['PRINTFUL_KEY']
   end
 
