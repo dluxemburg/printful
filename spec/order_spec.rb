@@ -67,7 +67,7 @@ unless PrintfulTest.printful_key.nil?
             }
           ]
         })
-        binding.pry
+        # binding.pry
       end
 
     end
