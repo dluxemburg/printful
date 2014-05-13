@@ -38,7 +38,7 @@ module Printful
     def process_response(response,path)
       if !response.body
         nil
-      elsif response.body['status']
+      elsif response.body['code']
         response.body['result']
       else
         raise Error.new("Status code #{response.body['code']}: #{response.body['result']} for request to '#{path}'")
